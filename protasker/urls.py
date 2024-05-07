@@ -21,4 +21,5 @@ from protasker import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('task/', views.task_list),
+    path('task/<int:id>', views.task_detail)
 ]
